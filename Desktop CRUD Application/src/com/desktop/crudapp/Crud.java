@@ -364,6 +364,9 @@ public class Crud extends javax.swing.JFrame {
             int option = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete the record selected, this cannot be reversed.", "Warning", JOptionPane.YES_NO_OPTION);
             if (option == JOptionPane.YES_OPTION){
                 EmpDao.delete(id);
+
+                DefaultTableModel model = (DefaultTableModel) EmpTable.getModel();
+                model.setRowCount(0);
             }
         }
         catch(HeadlessException | NumberFormatException | ArrayIndexOutOfBoundsException ex){
