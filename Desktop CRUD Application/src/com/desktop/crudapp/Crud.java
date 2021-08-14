@@ -348,6 +348,9 @@ public class Crud extends javax.swing.JFrame {
         txtPasswordField.setText("");
         txtEmailField.setText("");
         txtIdField.setText("");
+        
+        DefaultTableModel model = (DefaultTableModel) EmpTable.getModel();
+        model.setRowCount(0);
     }//GEN-LAST:event_btnClearAllActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
