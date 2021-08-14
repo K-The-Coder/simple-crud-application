@@ -367,6 +367,7 @@ public class Crud extends javax.swing.JFrame {
 
                 DefaultTableModel model = (DefaultTableModel) EmpTable.getModel();
                 model.setRowCount(0);
+                showEmployees();
             }
         }
         catch(HeadlessException | NumberFormatException | ArrayIndexOutOfBoundsException ex){
