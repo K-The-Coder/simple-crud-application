@@ -395,7 +395,7 @@ public class Crud extends javax.swing.JFrame {
 
             String name = emp.getName();
             String email = emp.getEmail();
-            String country = emp.getEmail();
+            String country = emp.getCountry();
 
             Object[] row = new Object[4];
             row[0] = id;
